@@ -1,0 +1,208 @@
+﻿  main.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(103,1): warning C4005: “AF_IPX”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(457): message : 参见“AF_IPX”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(128,1): warning C4005: “AF_MAX”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(476): message : 参见“AF_MAX”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(185,1): warning C4005: “SO_DONTLINGER”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(399): message : 参见“SO_DONTLINGER”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(238,25): error C2011: “sockaddr”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1007): message : 参见“sockaddr”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(440,5): error C2059: 语法错误:“常数”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(494,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(494,10): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(494,20): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(575,1): warning C4005: “IN_CLASSA”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(284): message : 参见“IN_CLASSA”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(581,1): warning C4005: “IN_CLASSB”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(290): message : 参见“IN_CLASSB”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(587,1): warning C4005: “IN_CLASSC”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(296): message : 参见“IN_CLASSC”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(598,1): warning C4005: “INADDR_ANY”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(301): message : 参见“INADDR_ANY”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(600,1): warning C4005: “INADDR_BROADCAST”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(303): message : 参见“INADDR_BROADCAST”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(636,28): error C2011: “sockaddr_in”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1011): message : 参见“sockaddr_in”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(136,23): error C2011: “fd_set”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1019): message : 参见“fd_set”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(156,1): warning C4005: “FD_CLR”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(94): message : 参见“FD_CLR”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(171,1): warning C4005: “FD_SET”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(99): message : 参见“FD_SET”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(180,16): error C2011: “timeval”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1035): message : 参见“timeval”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(236,17): error C2011: “hostent”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1023): message : 参见“hostent”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(249,16): error C2011: “netent”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(177): message : 参见“netent”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(256,17): error C2011: “servent”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1027): message : 参见“servent”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(268,18): error C2011: “protoent”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1031): message : 参见“protoent”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(364,24): error C2011: “WSAData”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(319): message : 参见“WSAData”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(462,18): error C2011: “sockproto”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(491): message : 参见“sockproto”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(504,16): error C2011: “linger”:“struct”类型重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(1015): message : 参见“linger”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(517,1): warning C4005: “SOMAXCONN”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(541): message : 参见“SOMAXCONN”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(552,1): warning C4005: “FD_READ”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(559): message : 参见“FD_READ”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(555,1): warning C4005: “FD_WRITE”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(560): message : 参见“FD_WRITE”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(558,1): warning C4005: “FD_OOB”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(561): message : 参见“FD_OOB”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(561,1): warning C4005: “FD_ACCEPT”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(562): message : 参见“FD_ACCEPT”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(564,1): warning C4005: “FD_CONNECT”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(563): message : 参见“FD_CONNECT”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(567,1): warning C4005: “FD_CLOSE”: 宏重定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(564): message : 参见“FD_CLOSE”的前一个定义
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1625,1): error C2375: “accept”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(739): message : 参见“accept”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1647,1): error C2375: “bind”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(744): message : 参见“bind”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1668,1): error C2375: “closesocket”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(749): message : 参见“closesocket”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1685,1): error C2375: “connect”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(751): message : 参见“connect”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1706,1): error C2375: “ioctlsocket”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(756): message : 参见“ioctlsocket”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1729,1): error C2375: “getpeername”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(761): message : 参见“getpeername”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1750,1): error C2375: “getsockname”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(766): message : 参见“getsockname”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1771,1): error C2375: “getsockopt”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(771): message : 参见“getsockopt”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1796,1): error C2375: “htonl”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(778): message : 参见“htonl”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1813,1): error C2375: “htons”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(780): message : 参见“htons”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1831,1): error C2375: “inet_addr”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(782): message : 参见“inet_addr”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1849,1): error C2375: “inet_ntoa”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(784): message : 参见“inet_ntoa”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1949,1): error C2375: “listen”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(786): message : 参见“listen”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1968,1): error C2375: “ntohl”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(790): message : 参见“ntohl”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1985,1): error C2375: “ntohs”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(792): message : 参见“ntohs”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2002,1): error C2375: “recv”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(794): message : 参见“recv”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2025,1): error C2375: “recvfrom”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(800): message : 参见“recvfrom”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2052,1): error C2375: “select”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(808): message : 参见“select”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2077,1): error C2375: “send”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(815): message : 参见“send”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2100,1): error C2375: “sendto”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(821): message : 参见“sendto”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2127,1): error C2375: “setsockopt”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(829): message : 参见“setsockopt”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2152,1): error C2375: “shutdown”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(836): message : 参见“shutdown”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2172,1): error C2375: “socket”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(840): message : 参见“socket”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2197,1): error C2375: “gethostbyaddr”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(847): message : 参见“gethostbyaddr”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2219,1): error C2375: “gethostbyname”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(852): message : 参见“gethostbyname”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2236,1): error C2375: “gethostname”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(854): message : 参见“gethostname”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2276,1): error C2375: “getservbyport”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(858): message : 参见“getservbyport”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2295,1): error C2375: “getservbyname”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(862): message : 参见“getservbyname”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2314,1): error C2375: “getprotobynumber”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(866): message : 参见“getprotobynumber”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2331,1): error C2375: “getprotobyname”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(868): message : 参见“getprotobyname”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2351,1): error C2375: “WSAStartup”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(872): message : 参见“WSAStartup”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2371,1): error C2375: “WSACleanup”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(876): message : 参见“WSACleanup”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2388,1): error C2375: “WSASetLastError”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(878): message : 参见“WSASetLastError”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2405,1): error C2375: “WSAGetLastError”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(880): message : 参见“WSAGetLastError”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2426,1): error C2375: “WSAIsBlocking”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(882): message : 参见“WSAIsBlocking”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2444,1): error C2375: “WSAUnhookBlockingHook”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(884): message : 参见“WSAUnhookBlockingHook”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2462,1): error C2375: “WSASetBlockingHook”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(886): message : 参见“WSASetBlockingHook”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2480,1): error C2375: “WSACancelBlockingCall”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(888): message : 参见“WSACancelBlockingCall”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2498,1): error C2375: “WSAAsyncGetServByName”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(890): message : 参见“WSAAsyncGetServByName”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2526,1): error C2375: “WSAAsyncGetServByPort”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(898): message : 参见“WSAAsyncGetServByPort”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2554,1): error C2375: “WSAAsyncGetProtoByName”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(906): message : 参见“WSAAsyncGetProtoByName”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2580,1): error C2375: “WSAAsyncGetProtoByNumber”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(913): message : 参见“WSAAsyncGetProtoByNumber”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2606,1): error C2375: “WSAAsyncGetHostByName”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(920): message : 参见“WSAAsyncGetHostByName”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2632,1): error C2375: “WSAAsyncGetHostByAddr”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(927): message : 参见“WSAAsyncGetHostByAddr”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2662,1): error C2375: “WSACancelAsyncRequest”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(936): message : 参见“WSACancelAsyncRequest”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(2680,1): error C2375: “WSAAsyncSelect”: 重定义；不同的链接
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h(938): message : 参见“WSAAsyncSelect”的声明
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(4206,1): error C2059: 语法错误:“}”
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(4206,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(61,25): error C2065: “RPlidarDriver”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(61,41): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(62,1): error C2448: “checkRPLIDARHealth”: 函数样式初始值设定项类似函数定义
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(112,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(155,14): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(215,22): warning C4018: “<”: 有符号/无符号不匹配
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(219,28): warning C4018: “<”: 有符号/无符号不匹配
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(232,49): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(329,2): error C2065: “RPlidarDriver”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(329,18): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(329,51): error C2653: “RPlidarDriver”: 不是类或命名空间名称
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(329,52): error C2065: “DRIVER_TYPE_SERIALPORT”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(329,39): error C3861: “CreateDriver”: 找不到标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(330,10): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(340,13): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(341,13): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(341,46): error C2653: “RPlidarDriver”: 不是类或命名空间名称
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(341,47): error C2065: “DRIVER_TYPE_SERIALPORT”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(341,34): error C3861: “CreateDriver”: 找不到标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(342,13): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(344,25): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(352,24): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(352,27): error C2541: “delete”: 不能删除不是指针的对象
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(353,17): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(362,17): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(363,17): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(363,50): error C2653: “RPlidarDriver”: 不是类或命名空间名称
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(363,51): error C2065: “DRIVER_TYPE_SERIALPORT”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(363,38): error C3861: “CreateDriver”: 找不到标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(364,16): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(366,29): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(375,28): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(375,31): error C2541: “delete”: 不能删除不是指针的对象
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(376,21): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(404,29): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(412,9): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(414,9): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(431,36): warning C4305: “初始化”: 从“int”到“float”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(480,25): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(484,17): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(506,32): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(507,32): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(591,5): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(592,5): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(595,33): error C2653: “RPlidarDriver”: 不是类或命名空间名称
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(595,34): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(595,20): error C3861: “DisposeDriver”: 找不到标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(596,5): error C2065: “drv”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\ultra_simple\main.cpp(596,9): fatal error C1003: 错误计数超过 100；正在停止编译

@@ -1,0 +1,637 @@
+﻿cl : 命令行 warning D9035: “Gm”选项已否决，并将在将来的版本中移除
+  TcpChannelSelDlg.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(33,21): error C2039: “string”: 不是“std”的成员
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(25): message : 参见“std”的声明
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(33,28): error C2061: 语法错误: 标识符“string”
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,10): error C2039: “string”: 不是“std”的成员
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(25): message : 参见“std”的声明
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,22): error C3646: “getIp”: 未知重写说明符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,22): error C2059: 语法错误:“(”
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,25): error C2334: “{”的前面有意外标记；跳过明显的函数体
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(47,10): error C2039: “string”: 不是“std”的成员
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(25): message : 参见“std”的声明
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(47,27): error C3646: “server_ip_”: 未知重写说明符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(47,27): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(34,9): error C2065: “server_ip_”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(34,22): error C2065: “ip”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.cpp(15,7): error C2614: “TCPChannelSelDlg”: 非法的成员初始化:“server_ip_”不是基或成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.cpp(24,37): error C2065: “server_ip_”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.cpp(38,5): error C2065: “server_ip_”: 未声明的标识符
+  stdafx.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+  SerialSelDlg.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+  scanView.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(101,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(102,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(130,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(131,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(133,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(157,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(158,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(216,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\scanView.cpp(218,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  MainFrm.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\MainFrm.cpp(147,54): warning C4267: “=”: 从“size_t”转换到“_u16”，可能丢失数据
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(602,63): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(586): message : 在编译 类 模板 成员函数“BOOL WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>::AddSimpleReBarBandCtrl(HWND,HWND,int,LPCTSTR,BOOL,int,BOOL)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(681): message : 查看对正在编译的函数 模板 实例化“BOOL WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>::AddSimpleReBarBandCtrl(HWND,HWND,int,LPCTSTR,BOOL,int,BOOL)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(1279): message : 查看对正在编译的 类 模板 实例化“WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(991,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(989): message : 在编译 类 模板 成员函数“bool WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>::PrepareChevronMenu(WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>::_ChevronMenuInfo &)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlframe.h(1255): message : 查看对正在编译的函数 模板 实例化“bool WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>::PrepareChevronMenu(WTL::CFrameWindowImplBase<ATL::CWindow,ATL::CFrameWinTraits>::_ChevronMenuInfo &)”的引用
+  FreqSetDlg.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+  framegrabber.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(33,21): error C2039: “string”: 不是“std”的成员
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(25): message : 参见“std”的声明
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(33,28): error C2061: 语法错误: 标识符“string”
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,10): error C2039: “string”: 不是“std”的成员
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(25): message : 参见“std”的声明
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,22): error C3646: “getIp”: 未知重写说明符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,22): error C2059: 语法错误:“(”
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(41,25): error C2334: “{”的前面有意外标记；跳过明显的函数体
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(47,10): error C2039: “string”: 不是“std”的成员
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(25): message : 参见“std”的声明
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(47,27): error C3646: “server_ip_”: 未知重写说明符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(47,27): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(34,9): error C2065: “server_ip_”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(34,22): error C2065: “ip”: 未声明的标识符
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\framegrabber.cpp(60,12): error C2039: “getIp”: 不是“TCPChannelSelDlg”的成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\TcpChannelSelDlg.h(3): message : 参见“TCPChannelSelDlg”的声明
+  lidarmgr.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\drvlogic\lidarmgr.cpp(27,10): fatal error C1083: 无法打开包括文件: “stdafx.h”: No such file or directory
+  AboutDlg.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1319,33): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atluser.h(1329,31): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(469,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(476,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(483,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(490,66): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlgdi.h(3682,62): warning C4838: 从“LONG”转换到“DWORD”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3208,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3230,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3291,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atldlgs.h(3306,1): warning C4302: “类型强制转换”: 从“LPCTSTR”到“WORD”截断
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3270,39): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3267): message : 在编译 类 模板 成员函数“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”时
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3664): message : 查看对正在编译的函数 模板 实例化“void WTL::CSortListViewImpl<T>::NotifyParentSortChanged(int,int)”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3701): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewImpl<T>”的引用
+          with
+          [
+              T=WTL::CSortListViewCtrl
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(3720): message : 查看对正在编译的 类 模板 实例化“WTL::CSortListViewCtrlImpl<WTL::CSortListViewCtrl,WTL::CListViewCtrl,WTL::CSortListViewCtrlTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1081,1): warning C4838: 从“int”转换到“UINT_PTR”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1076): message : 在编译 类 模板 成员函数“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1323): message : 查看对正在编译的函数 模板 实例化“bool WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>::Navigate(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlx.h(1820): message : 查看对正在编译的 类 模板 实例化“WTL::CHyperLinkImpl<WTL::CHyperLink,ATL::CWindow,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3970,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3964): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(4150): message : 查看对正在编译的 类 模板 实例化“WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3910,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3860): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3824): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::_ProcessAllHookMessages(UINT,WPARAM,LPARAM)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3839,61): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3833): message : 在编译 类 模板 成员函数“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3814): message : 查看对正在编译的函数 模板 实例化“void WTL::CMDICommandBarCtrlImpl<WTL::CMDICommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::UpdateRebarBandIdealSize(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2915,62): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2908): message : 在编译 类 模板 成员函数“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”时
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2068): message : 查看对正在编译的函数 模板 实例化“bool WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>::DisplayChevronMenu(void)”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3269): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<T,TBase,TWinTraits>”的引用
+          with
+          [
+              T=WTL::CMDICommandBarCtrl,
+              TBase=WTL::CCommandBarCtrlBase,
+              TWinTraits=ATL::CControlWinTraits
+          ]
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2935,67): warning C4838: 从“int”转换到“UINT”需要收缩转换
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(2933): message : 在编译 类 模板 成员函数“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”时
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(1432): message : 查看对正在编译的函数 模板 实例化“void WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>::GetSystemSettings(void)”的引用
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\app\frame_grabber\ref\wtl\atlctrlw.h(3258): message : 查看对正在编译的 类 模板 实例化“WTL::CCommandBarCtrlImpl<WTL::CCommandBarCtrl,WTL::CCommandBarCtrlBase,ATL::CControlWinTraits>”的引用

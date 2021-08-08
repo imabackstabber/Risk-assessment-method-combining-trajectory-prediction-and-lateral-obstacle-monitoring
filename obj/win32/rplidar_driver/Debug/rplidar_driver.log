@@ -1,0 +1,28 @@
+﻿  net_serial.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+  net_socket.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+  timer.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+  thread.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+  rplidar_driver.cpp
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_protocol.h(59,16): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): warning C4200: 使用了非标准扩展: 结构/联合中的零大小数组
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\include\rplidar_cmd.h(256,20): message : 默认构造函数或 copy/move 赋值运算符将忽略此成员
+D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\sdk\src\rplidar_driver.cpp(2014,35): warning C4267: “初始化”: 从“size_t”转换到“_u8”，可能丢失数据
+  正在生成代码...
+  rplidar_driver.vcxproj -> D:\31227\挑战杯\rplidar_sdk_v1.11.0\rplidar_sdk-release-v1.11.0\sdk\workspaces\vc10\\..\..\output\win32\Debug\rplidar_driver.lib

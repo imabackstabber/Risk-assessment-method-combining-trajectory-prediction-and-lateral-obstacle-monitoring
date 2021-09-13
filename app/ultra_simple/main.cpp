@@ -27,7 +27,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-//#include <signal.h>
 #include <graphics.h>//for easy drawing
 #include <algorithm> //for get maxelement
 #include <vector> //for DBSCAN
@@ -36,7 +35,12 @@
 #include <windows.h> // for sound display
 #include <stdbool.h>
 #include <string.h>
+#include <iostream>
 #pragma comment(lib, "Winmm.lib") //for sound display
+
+// #include <Winsock2.h>
+#pragma comment(lib,"ws2_32.lib")
+#pragma warning(disable:4996)
 
 #ifndef _countof
 #define _countof(_Array) (int)(sizeof(_Array) / sizeof(_Array[0]))
@@ -57,280 +61,9 @@ static inline void delay(_word_size_t ms){
 }
 #endif
 
+#define PI 3.1415926
 using namespace rp::standalone::rplidar;
 using namespace std;
-
-class WZSerialPort
-{
-public:
-    WZSerialPort();
-    ~WZSerialPort();
-
-    // ´ò¿ª´®¿Ú,³É¹¦·µ»Øtrue£¬Ê§°Ü·µ»Øfalse
-    // portname(´®¿ÚÃû): ÔÚWindowsÏÂÊÇ"COM1""COM2"µÈ£¬ÔÚLinuxÏÂÊÇ"/dev/ttyS1"µÈ
-    // baudrate(²¨ÌØÂÊ): 9600¡¢19200¡¢38400¡¢43000¡¢56000¡¢57600¡¢115200 
-    // parity(Ğ£ÑéÎ»): 0ÎªÎŞĞ£Ñé£¬1ÎªÆæĞ£Ñé£¬2ÎªÅ¼Ğ£Ñé£¬3Îª±ê¼ÇĞ£Ñé
-    // databit(Êı¾İÎ»): 4-8£¬Í¨³£Îª8Î»
-    // stopbit(Í£Ö¹Î»): 1Îª1Î»Í£Ö¹Î»£¬2Îª2Î»Í£Ö¹Î»,3Îª1.5Î»Í£Ö¹Î»
-    // synchronizable(Í¬²½¡¢Òì²½): 0ÎªÒì²½£¬1ÎªÍ¬²½
-    bool open(const char* portname, int baudrate = 9600, char parity = 0, char databit = 8, char stopbit = 1, char synchronizeflag = 0);
-
-    //¹Ø±Õ´®¿Ú£¬²ÎÊı´ı¶¨
-    void close();
-
-    //·¢ËÍÊı¾İ»òĞ´Êı¾İ£¬³É¹¦·µ»Ø·¢ËÍÊı¾İ³¤¶È£¬Ê§°Ü·µ»Ø0
-    int send(string dat);
-
-    //½ÓÊÜÊı¾İ»ò¶ÁÊı¾İ£¬³É¹¦·µ»Ø¶ÁÈ¡Êµ¼ÊÊı¾İµÄ³¤¶È£¬Ê§°Ü·µ»Ø0
-    string receive();
-
-private:
-    int pHandle[16];
-    char synchronizeflag;
-};
-
-WZSerialPort::WZSerialPort()
-{
-
-}
-
-WZSerialPort::~WZSerialPort()
-{
-
-}
-
-bool WZSerialPort::open(const char* portname,
-    int baudrate,
-    char parity,
-    char databit,
-    char stopbit,
-    char synchronizeflag)
-{
-    this->synchronizeflag = synchronizeflag;
-    HANDLE hCom = NULL;
-    if (this->synchronizeflag)
-    {
-        //Í¬²½·½Ê½
-        hCom = CreateFileA(portname, //´®¿ÚÃû
-            GENERIC_READ | GENERIC_WRITE, //Ö§³Ö¶ÁĞ´
-            0, //¶ÀÕ¼·½Ê½£¬´®¿Ú²»Ö§³Ö¹²Ïí
-            NULL,//°²È«ÊôĞÔÖ¸Õë£¬Ä¬ÈÏÖµÎªNULL
-            OPEN_EXISTING, //´ò¿ªÏÖÓĞµÄ´®¿ÚÎÄ¼ş
-            0, //0£ºÍ¬²½·½Ê½£¬FILE_FLAG_OVERLAPPED£ºÒì²½·½Ê½
-            NULL);//ÓÃÓÚ¸´ÖÆÎÄ¼ş¾ä±ú£¬Ä¬ÈÏÖµÎªNULL£¬¶Ô´®¿Ú¶øÑÔ¸Ã²ÎÊı±ØĞëÖÃÎªNULL
-    }
-    else
-    {
-        //Òì²½·½Ê½
-        hCom = CreateFileA(portname, //´®¿ÚÃû
-            GENERIC_READ | GENERIC_WRITE, //Ö§³Ö¶ÁĞ´
-            0,			//¶ÀÕ¼·½Ê½£¬´®¿Ú²»Ö§³Ö¹²Ïí
-            NULL,	//°²È«ÊôĞÔÖ¸Õë£¬Ä¬ÈÏÖµÎªNULL
-            OPEN_EXISTING, //´ò¿ªÏÖÓĞµÄ´®¿ÚÎÄ¼ş
-            FILE_FLAG_OVERLAPPED, //0£ºÍ¬²½·½Ê½£¬FILE_FLAG_OVERLAPPED£ºÒì²½·½Ê½
-            NULL);//ÓÃÓÚ¸´ÖÆÎÄ¼ş¾ä±ú£¬Ä¬ÈÏÖµÎªNULL£¬¶Ô´®¿Ú¶øÑÔ¸Ã²ÎÊı±ØĞëÖÃÎªNULL
-    }
-
-    if (hCom == (HANDLE)-1)
-    {
-        return false;
-    }
-
-    //ÅäÖÃ»º³åÇø´óĞ¡ 
-    if (!SetupComm(hCom, 1024, 1024))
-    {
-        return false;
-    }
-
-    // ÅäÖÃ²ÎÊı 
-    DCB p;
-    memset(&p, 0, sizeof(p));
-    p.DCBlength = sizeof(p);
-    p.BaudRate = baudrate; // ²¨ÌØÂÊ
-    p.ByteSize = databit; // Êı¾İÎ»
-
-    switch (parity) //Ğ£ÑéÎ»
-    {
-    case 0:
-        p.Parity = NOPARITY; //ÎŞĞ£Ñé
-        break;
-    case 1:
-        p.Parity = ODDPARITY; //ÆæĞ£Ñé
-        break;
-    case 2:
-        p.Parity = EVENPARITY; //Å¼Ğ£Ñé
-        break;
-    case 3:
-        p.Parity = MARKPARITY; //±ê¼ÇĞ£Ñé
-        break;
-    }
-
-    switch (stopbit) //Í£Ö¹Î»
-    {
-    case 1:
-        p.StopBits = ONESTOPBIT; //1Î»Í£Ö¹Î»
-        break;
-    case 2:
-        p.StopBits = TWOSTOPBITS; //2Î»Í£Ö¹Î»
-        break;
-    case 3:
-        p.StopBits = ONE5STOPBITS; //1.5Î»Í£Ö¹Î»
-        break;
-    }
-
-    if (!SetCommState(hCom, &p))
-    {
-        // ÉèÖÃ²ÎÊıÊ§°Ü
-        return false;
-    }
-
-    //³¬Ê±´¦Àí,µ¥Î»£ººÁÃë
-    //×Ü³¬Ê±£½Ê±¼äÏµÊı¡Á¶Á»òĞ´µÄ×Ö·ûÊı£«Ê±¼ä³£Á¿
-    COMMTIMEOUTS TimeOuts;
-    TimeOuts.ReadIntervalTimeout = 100; //¶Á¼ä¸ô³¬Ê± 1000
-    TimeOuts.ReadTotalTimeoutMultiplier = 100; //¶ÁÊ±¼äÏµÊı 500
-    TimeOuts.ReadTotalTimeoutConstant = 5000; //¶ÁÊ±¼ä³£Á¿
-    TimeOuts.WriteTotalTimeoutMultiplier = 500; // Ğ´Ê±¼äÏµÊı
-    TimeOuts.WriteTotalTimeoutConstant = 2000; //Ğ´Ê±¼ä³£Á¿
-    SetCommTimeouts(hCom, &TimeOuts);
-
-    PurgeComm(hCom, PURGE_TXCLEAR | PURGE_RXCLEAR);//Çå¿Õ´®¿Ú»º³åÇø
-
-    memcpy(pHandle, &hCom, sizeof(hCom));//±£´æ¾ä±ú
-
-    return true;
-}
-
-void WZSerialPort::close()
-{
-    HANDLE hCom = *(HANDLE*)pHandle;
-    CloseHandle(hCom);
-}
-
-int WZSerialPort::send(string dat)
-{
-    HANDLE hCom = *(HANDLE*)pHandle;
-
-    if (this->synchronizeflag)
-    {
-        // Í¬²½·½Ê½
-        DWORD dwBytesWrite = dat.length(); //³É¹¦Ğ´ÈëµÄÊı¾İ×Ö½ÚÊı
-        BOOL bWriteStat = WriteFile(hCom, //´®¿Ú¾ä±ú
-            (char*)dat.c_str(), //Êı¾İÊ×µØÖ·
-            dwBytesWrite, //Òª·¢ËÍµÄÊı¾İ×Ö½ÚÊı
-            &dwBytesWrite, //DWORD*£¬ÓÃÀ´½ÓÊÕ·µ»Ø³É¹¦·¢ËÍµÄÊı¾İ×Ö½ÚÊı
-            NULL); //NULLÎªÍ¬²½·¢ËÍ£¬OVERLAPPED*ÎªÒì²½·¢ËÍ
-        if (!bWriteStat)
-        {
-            return 0;
-        }
-        return dwBytesWrite;
-    }
-    else
-    {
-        //Òì²½·½Ê½
-        DWORD dwBytesWrite = dat.length(); //³É¹¦Ğ´ÈëµÄÊı¾İ×Ö½ÚÊı
-        DWORD dwErrorFlags; //´íÎó±êÖ¾
-        COMSTAT comStat; //Í¨Ñ¶×´Ì¬
-        OVERLAPPED m_osWrite; //Òì²½ÊäÈëÊä³ö½á¹¹Ìå
-
-                              //´´½¨Ò»¸öÓÃÓÚOVERLAPPEDµÄÊÂ¼ş´¦Àí£¬²»»áÕæÕıÓÃµ½£¬µ«ÏµÍ³ÒªÇóÕâÃ´×ö
-        memset(&m_osWrite, 0, sizeof(m_osWrite));
-        m_osWrite.hEvent = CreateEvent(NULL, TRUE, FALSE, "WriteEvent");
-
-        ClearCommError(hCom, &dwErrorFlags, &comStat); //Çå³ıÍ¨Ñ¶´íÎó£¬»ñµÃÉè±¸µ±Ç°×´Ì¬
-        BOOL bWriteStat = WriteFile(hCom, //´®¿Ú¾ä±ú
-            (char*)dat.c_str(), //Êı¾İÊ×µØÖ·
-            dwBytesWrite, //Òª·¢ËÍµÄÊı¾İ×Ö½ÚÊı
-            &dwBytesWrite, //DWORD*£¬ÓÃÀ´½ÓÊÕ·µ»Ø³É¹¦·¢ËÍµÄÊı¾İ×Ö½ÚÊı
-            &m_osWrite); //NULLÎªÍ¬²½·¢ËÍ£¬OVERLAPPED*ÎªÒì²½·¢ËÍ
-        if (!bWriteStat)
-        {
-            if (GetLastError() == ERROR_IO_PENDING) //Èç¹û´®¿ÚÕıÔÚĞ´Èë
-            {
-                WaitForSingleObject(m_osWrite.hEvent, 1000); //µÈ´ıĞ´ÈëÊÂ¼ş1ÃëÖÓ
-            }
-            else
-            {
-                ClearCommError(hCom, &dwErrorFlags, &comStat); //Çå³ıÍ¨Ñ¶´íÎó
-                CloseHandle(m_osWrite.hEvent); //¹Ø±Õ²¢ÊÍ·ÅhEventÄÚ´æ
-                return 0;
-            }
-        }
-        return dwBytesWrite;
-    }
-}
-
-string WZSerialPort::receive()
-{
-    HANDLE hCom = *(HANDLE*)pHandle;
-    string rec_str = "";
-    char buf[1024];
-    if (this->synchronizeflag)
-    {
-        //Í¬²½·½Ê½
-        DWORD wCount = 1024; //³É¹¦¶ÁÈ¡µÄÊı¾İ×Ö½ÚÊı
-        BOOL bReadStat = ReadFile(hCom, //´®¿Ú¾ä±ú
-            buf, //Êı¾İÊ×µØÖ·
-            wCount, //Òª¶ÁÈ¡µÄÊı¾İ×î´ó×Ö½ÚÊı
-            &wCount, //DWORD*,ÓÃÀ´½ÓÊÕ·µ»Ø³É¹¦¶ÁÈ¡µÄÊı¾İ×Ö½ÚÊı
-            NULL); //NULLÎªÍ¬²½·¢ËÍ£¬OVERLAPPED*ÎªÒì²½·¢ËÍ
-        for (int i = 0; i < 1024; i++)
-        {
-            if (buf[i] != -52)
-                rec_str += buf[i];
-            else
-                break;
-        }
-        return rec_str;
-    }
-    else
-    {
-        //Òì²½·½Ê½
-        DWORD wCount = 1024; //³É¹¦¶ÁÈ¡µÄÊı¾İ×Ö½ÚÊı
-        DWORD dwErrorFlags;  //´íÎó±êÖ¾
-        COMSTAT comStat;     //Í¨Ñ¶×´Ì¬
-        OVERLAPPED m_osRead; //Òì²½ÊäÈëÊä³ö½á¹¹Ìå
-
-                             //´´½¨Ò»¸öÓÃÓÚOVERLAPPEDµÄÊÂ¼ş´¦Àí£¬²»»áÕæÕıÓÃµ½£¬µ«ÏµÍ³ÒªÇóÕâÃ´×ö
-        memset(&m_osRead, 0, sizeof(m_osRead));
-        m_osRead.hEvent = CreateEvent(NULL, TRUE, FALSE, "ReadEvent");
-
-        ClearCommError(hCom, &dwErrorFlags, &comStat); //Çå³ıÍ¨Ñ¶´íÎó£¬»ñµÃÉè±¸µ±Ç°×´Ì¬
-        //if (!comStat.cbInQue)    
-        //	return 0;  //Èç¹ûÊäÈë»º³åÇø×Ö½ÚÊıÎª0£¬Ôò·µ»Øfalse
-
-                       //std::cout << comStat.cbInQue << std::endl;
-        BOOL bReadStat = ReadFile(hCom,     //´®¿Ú¾ä±ú
-            buf, //Êı¾İÊ×µØÖ·
-            wCount, //Òª¶ÁÈ¡µÄÊı¾İ×î´ó×Ö½ÚÊı
-            &wCount, //DWORD*,ÓÃÀ´½ÓÊÕ·µ»Ø³É¹¦¶ÁÈ¡µÄÊı¾İ×Ö½ÚÊı
-            &m_osRead); //NULLÎªÍ¬²½·¢ËÍ£¬OVERLAPPED*ÎªÒì²½·¢ËÍ
-        if (!bReadStat)
-        {
-            if (GetLastError() == ERROR_IO_PENDING) //Èç¹û´®¿ÚÕıÔÚ¶ÁÈ¡ÖĞ
-            {
-                //GetOverlappedResultº¯ÊıµÄ×îºóÒ»¸ö²ÎÊıÉèÎªTRUE
-                //º¯Êı»áÒ»Ö±µÈ´ı£¬Ö±µ½¶Á²Ù×÷Íê³É»òÓÉÓÚ´íÎó¶ø·µ»Ø
-                GetOverlappedResult(hCom, &m_osRead, &wCount, TRUE);
-            }
-            else
-            {
-                ClearCommError(hCom, &dwErrorFlags, &comStat); //Çå³ıÍ¨Ñ¶´íÎó
-                CloseHandle(m_osRead.hEvent); //¹Ø±Õ²¢ÊÍ·ÅhEventµÄÄÚ´æ
-                return 0;
-            }
-        }
-        for (int i = 0; i < 1024; i++)
-        {
-            if (buf[i] != -52)
-                rec_str += buf[i];
-            else
-                break;
-        }
-        return rec_str;
-    }
-}
 
 bool checkRPLIDARHealth(RPlidarDriver * drv)
 {
@@ -362,25 +95,298 @@ void ctrlc(int)
 {
     ctrl_c_pressed = true;
 }
-using namespace std;
-#define PI 3.1415926
 
 typedef struct p {
     float first;
     float second;
 }p;
 
-//¿ªÈ«²¿±äÁ¿×ö´®¿ÚÍ¨ĞÅ
+
+/*
+    ä¸²å£éƒ¨åˆ†
+*/
+class WZSerialPort
+{
+public:
+    WZSerialPort();
+    ~WZSerialPort();
+
+    // æ‰“å¼€ä¸²å£,æˆåŠŸè¿”å›trueï¼Œå¤±è´¥è¿”å›false
+    // portname(ä¸²å£å): åœ¨Windowsä¸‹æ˜¯"COM1""COM2"ç­‰ï¼Œåœ¨Linuxä¸‹æ˜¯"/dev/ttyS1"ç­‰
+    // baudrate(æ³¢ç‰¹ç‡): 9600ã€19200ã€38400ã€43000ã€56000ã€57600ã€115200 
+    // parity(æ ¡éªŒä½): 0ä¸ºæ— æ ¡éªŒï¼Œ1ä¸ºå¥‡æ ¡éªŒï¼Œ2ä¸ºå¶æ ¡éªŒï¼Œ3ä¸ºæ ‡è®°æ ¡éªŒ
+    // databit(æ•°æ®ä½): 4-8ï¼Œé€šå¸¸ä¸º8ä½
+    // stopbit(åœæ­¢ä½): 1ä¸º1ä½åœæ­¢ä½ï¼Œ2ä¸º2ä½åœæ­¢ä½,3ä¸º1.5ä½åœæ­¢ä½
+    // synchronizable(åŒæ­¥ã€å¼‚æ­¥): 0ä¸ºå¼‚æ­¥ï¼Œ1ä¸ºåŒæ­¥
+    bool open(const char* portname, int baudrate = 9600, char parity = 0, char databit = 8, char stopbit = 1, char synchronizeflag = 0);
+
+    //å…³é—­ä¸²å£ï¼Œå‚æ•°å¾…å®š
+    void close();
+
+    //å‘é€æ•°æ®æˆ–å†™æ•°æ®ï¼ŒæˆåŠŸè¿”å›å‘é€æ•°æ®é•¿åº¦ï¼Œå¤±è´¥è¿”å›0
+    int send(string dat);
+
+    //æ¥å—æ•°æ®æˆ–è¯»æ•°æ®ï¼ŒæˆåŠŸè¿”å›è¯»å–å®é™…æ•°æ®çš„é•¿åº¦ï¼Œå¤±è´¥è¿”å›0
+    string receive();
+
+private:
+    int pHandle[16];
+    char synchronizeflag;
+};
+
+WZSerialPort::WZSerialPort()
+{
+
+}
+
+WZSerialPort::~WZSerialPort()
+{
+
+}
+
+bool WZSerialPort::open(const char* portname,
+    int baudrate,
+    char parity,
+    char databit,
+    char stopbit,
+    char synchronizeflag)
+{
+    this->synchronizeflag = synchronizeflag;
+    HANDLE hCom = NULL;
+    if (this->synchronizeflag)
+    {
+        //åŒæ­¥æ–¹å¼
+        hCom = CreateFileA(portname, //ä¸²å£å
+            GENERIC_READ | GENERIC_WRITE, //æ”¯æŒè¯»å†™
+            0, //ç‹¬å æ–¹å¼ï¼Œä¸²å£ä¸æ”¯æŒå…±äº«
+            NULL,//å®‰å…¨å±æ€§æŒ‡é’ˆï¼Œé»˜è®¤å€¼ä¸ºNULL
+            OPEN_EXISTING, //æ‰“å¼€ç°æœ‰çš„ä¸²å£æ–‡ä»¶
+            0, //0ï¼šåŒæ­¥æ–¹å¼ï¼ŒFILE_FLAG_OVERLAPPEDï¼šå¼‚æ­¥æ–¹å¼
+            NULL);//ç”¨äºå¤åˆ¶æ–‡ä»¶å¥æŸ„ï¼Œé»˜è®¤å€¼ä¸ºNULLï¼Œå¯¹ä¸²å£è€Œè¨€è¯¥å‚æ•°å¿…é¡»ç½®ä¸ºNULL
+    }
+    else
+    {
+        //å¼‚æ­¥æ–¹å¼
+        hCom = CreateFileA(portname, //ä¸²å£å
+            GENERIC_READ | GENERIC_WRITE, //æ”¯æŒè¯»å†™
+            0,			//ç‹¬å æ–¹å¼ï¼Œä¸²å£ä¸æ”¯æŒå…±äº«
+            NULL,	//å®‰å…¨å±æ€§æŒ‡é’ˆï¼Œé»˜è®¤å€¼ä¸ºNULL
+            OPEN_EXISTING, //æ‰“å¼€ç°æœ‰çš„ä¸²å£æ–‡ä»¶
+            FILE_FLAG_OVERLAPPED, //0ï¼šåŒæ­¥æ–¹å¼ï¼ŒFILE_FLAG_OVERLAPPEDï¼šå¼‚æ­¥æ–¹å¼
+            NULL);//ç”¨äºå¤åˆ¶æ–‡ä»¶å¥æŸ„ï¼Œé»˜è®¤å€¼ä¸ºNULLï¼Œå¯¹ä¸²å£è€Œè¨€è¯¥å‚æ•°å¿…é¡»ç½®ä¸ºNULL
+    }
+
+    if (hCom == (HANDLE)-1)
+    {
+        return false;
+    }
+
+    //é…ç½®ç¼“å†²åŒºå¤§å° 
+    if (!SetupComm(hCom, 1024, 1024))
+    {
+        return false;
+    }
+
+    // é…ç½®å‚æ•° 
+    DCB p;
+    memset(&p, 0, sizeof(p));
+    p.DCBlength = sizeof(p);
+    p.BaudRate = baudrate; // æ³¢ç‰¹ç‡
+    p.ByteSize = databit; // æ•°æ®ä½
+
+    switch (parity) //æ ¡éªŒä½
+    {
+    case 0:
+        p.Parity = NOPARITY; //æ— æ ¡éªŒ
+        break;
+    case 1:
+        p.Parity = ODDPARITY; //å¥‡æ ¡éªŒ
+        break;
+    case 2:
+        p.Parity = EVENPARITY; //å¶æ ¡éªŒ
+        break;
+    case 3:
+        p.Parity = MARKPARITY; //æ ‡è®°æ ¡éªŒ
+        break;
+    }
+
+    switch (stopbit) //åœæ­¢ä½
+    {
+    case 1:
+        p.StopBits = ONESTOPBIT; //1ä½åœæ­¢ä½
+        break;
+    case 2:
+        p.StopBits = TWOSTOPBITS; //2ä½åœæ­¢ä½
+        break;
+    case 3:
+        p.StopBits = ONE5STOPBITS; //1.5ä½åœæ­¢ä½
+        break;
+    }
+
+    if (!SetCommState(hCom, &p))
+    {
+        // è®¾ç½®å‚æ•°å¤±è´¥
+        return false;
+    }
+
+    //è¶…æ—¶å¤„ç†,å•ä½ï¼šæ¯«ç§’
+    //æ€»è¶…æ—¶ï¼æ—¶é—´ç³»æ•°Ã—è¯»æˆ–å†™çš„å­—ç¬¦æ•°ï¼‹æ—¶é—´å¸¸é‡
+    COMMTIMEOUTS TimeOuts;
+    TimeOuts.ReadIntervalTimeout = 100; //è¯»é—´éš”è¶…æ—¶ 1000
+    TimeOuts.ReadTotalTimeoutMultiplier = 100; //è¯»æ—¶é—´ç³»æ•° 500
+    TimeOuts.ReadTotalTimeoutConstant = 5000; //è¯»æ—¶é—´å¸¸é‡
+    TimeOuts.WriteTotalTimeoutMultiplier = 500; // å†™æ—¶é—´ç³»æ•°
+    TimeOuts.WriteTotalTimeoutConstant = 2000; //å†™æ—¶é—´å¸¸é‡
+    SetCommTimeouts(hCom, &TimeOuts);
+
+    PurgeComm(hCom, PURGE_TXCLEAR | PURGE_RXCLEAR);//æ¸…ç©ºä¸²å£ç¼“å†²åŒº
+
+    memcpy(pHandle, &hCom, sizeof(hCom));//ä¿å­˜å¥æŸ„
+
+    return true;
+}
+
+void WZSerialPort::close()
+{
+    HANDLE hCom = *(HANDLE*)pHandle;
+    CloseHandle(hCom);
+}
+
+int WZSerialPort::send(string dat)
+{
+    HANDLE hCom = *(HANDLE*)pHandle;
+
+    if (this->synchronizeflag)
+    {
+        // åŒæ­¥æ–¹å¼
+        DWORD dwBytesWrite = dat.length(); //æˆåŠŸå†™å…¥çš„æ•°æ®å­—èŠ‚æ•°
+        BOOL bWriteStat = WriteFile(hCom, //ä¸²å£å¥æŸ„
+            (char*)dat.c_str(), //æ•°æ®é¦–åœ°å€
+            dwBytesWrite, //è¦å‘é€çš„æ•°æ®å­—èŠ‚æ•°
+            &dwBytesWrite, //DWORD*ï¼Œç”¨æ¥æ¥æ”¶è¿”å›æˆåŠŸå‘é€çš„æ•°æ®å­—èŠ‚æ•°
+            NULL); //NULLä¸ºåŒæ­¥å‘é€ï¼ŒOVERLAPPED*ä¸ºå¼‚æ­¥å‘é€
+        if (!bWriteStat)
+        {
+            return 0;
+        }
+        return dwBytesWrite;
+    }
+    else
+    {
+        //å¼‚æ­¥æ–¹å¼
+        DWORD dwBytesWrite = dat.length(); //æˆåŠŸå†™å…¥çš„æ•°æ®å­—èŠ‚æ•°
+        DWORD dwErrorFlags; //é”™è¯¯æ ‡å¿—
+        COMSTAT comStat; //é€šè®¯çŠ¶æ€
+        OVERLAPPED m_osWrite; //å¼‚æ­¥è¾“å…¥è¾“å‡ºç»“æ„ä½“
+
+                              //åˆ›å»ºä¸€ä¸ªç”¨äºOVERLAPPEDçš„äº‹ä»¶å¤„ç†ï¼Œä¸ä¼šçœŸæ­£ç”¨åˆ°ï¼Œä½†ç³»ç»Ÿè¦æ±‚è¿™ä¹ˆåš
+        memset(&m_osWrite, 0, sizeof(m_osWrite));
+        m_osWrite.hEvent = CreateEvent(NULL, TRUE, FALSE, "WriteEvent");
+
+        ClearCommError(hCom, &dwErrorFlags, &comStat); //æ¸…é™¤é€šè®¯é”™è¯¯ï¼Œè·å¾—è®¾å¤‡å½“å‰çŠ¶æ€
+        BOOL bWriteStat = WriteFile(hCom, //ä¸²å£å¥æŸ„
+            (char*)dat.c_str(), //æ•°æ®é¦–åœ°å€
+            dwBytesWrite, //è¦å‘é€çš„æ•°æ®å­—èŠ‚æ•°
+            &dwBytesWrite, //DWORD*ï¼Œç”¨æ¥æ¥æ”¶è¿”å›æˆåŠŸå‘é€çš„æ•°æ®å­—èŠ‚æ•°
+            &m_osWrite); //NULLä¸ºåŒæ­¥å‘é€ï¼ŒOVERLAPPED*ä¸ºå¼‚æ­¥å‘é€
+        if (!bWriteStat)
+        {
+            if (GetLastError() == ERROR_IO_PENDING) //å¦‚æœä¸²å£æ­£åœ¨å†™å…¥
+            {
+                WaitForSingleObject(m_osWrite.hEvent, 1000); //ç­‰å¾…å†™å…¥äº‹ä»¶1ç§’é’Ÿ
+            }
+            else
+            {
+                ClearCommError(hCom, &dwErrorFlags, &comStat); //æ¸…é™¤é€šè®¯é”™è¯¯
+                CloseHandle(m_osWrite.hEvent); //å…³é—­å¹¶é‡Šæ”¾hEventå†…å­˜
+                return 0;
+            }
+        }
+        return dwBytesWrite;
+    }
+}
+
+string WZSerialPort::receive()
+{
+    HANDLE hCom = *(HANDLE*)pHandle;
+    string rec_str = "";
+    char buf[1024];
+    if (this->synchronizeflag)
+    {
+        //åŒæ­¥æ–¹å¼
+        DWORD wCount = 1024; //æˆåŠŸè¯»å–çš„æ•°æ®å­—èŠ‚æ•°
+        BOOL bReadStat = ReadFile(hCom, //ä¸²å£å¥æŸ„
+            buf, //æ•°æ®é¦–åœ°å€
+            wCount, //è¦è¯»å–çš„æ•°æ®æœ€å¤§å­—èŠ‚æ•°
+            &wCount, //DWORD*,ç”¨æ¥æ¥æ”¶è¿”å›æˆåŠŸè¯»å–çš„æ•°æ®å­—èŠ‚æ•°
+            NULL); //NULLä¸ºåŒæ­¥å‘é€ï¼ŒOVERLAPPED*ä¸ºå¼‚æ­¥å‘é€
+        for (int i = 0; i < 1024; i++)
+        {
+            if (buf[i] != -52)
+                rec_str += buf[i];
+            else
+                break;
+        }
+        return rec_str;
+    }
+    else
+    {
+        //å¼‚æ­¥æ–¹å¼
+        DWORD wCount = 1024; //æˆåŠŸè¯»å–çš„æ•°æ®å­—èŠ‚æ•°
+        DWORD dwErrorFlags;  //é”™è¯¯æ ‡å¿—
+        COMSTAT comStat;     //é€šè®¯çŠ¶æ€
+        OVERLAPPED m_osRead; //å¼‚æ­¥è¾“å…¥è¾“å‡ºç»“æ„ä½“
+
+                             //åˆ›å»ºä¸€ä¸ªç”¨äºOVERLAPPEDçš„äº‹ä»¶å¤„ç†ï¼Œä¸ä¼šçœŸæ­£ç”¨åˆ°ï¼Œä½†ç³»ç»Ÿè¦æ±‚è¿™ä¹ˆåš
+        memset(&m_osRead, 0, sizeof(m_osRead));
+        m_osRead.hEvent = CreateEvent(NULL, TRUE, FALSE, "ReadEvent");
+
+        ClearCommError(hCom, &dwErrorFlags, &comStat); //æ¸…é™¤é€šè®¯é”™è¯¯ï¼Œè·å¾—è®¾å¤‡å½“å‰çŠ¶æ€
+        //if (!comStat.cbInQue)    
+        //	return 0;  //å¦‚æœè¾“å…¥ç¼“å†²åŒºå­—èŠ‚æ•°ä¸º0ï¼Œåˆ™è¿”å›false
+
+                       //std::cout << comStat.cbInQue << std::endl;
+        BOOL bReadStat = ReadFile(hCom,     //ä¸²å£å¥æŸ„
+            buf, //æ•°æ®é¦–åœ°å€
+            wCount, //è¦è¯»å–çš„æ•°æ®æœ€å¤§å­—èŠ‚æ•°
+            &wCount, //DWORD*,ç”¨æ¥æ¥æ”¶è¿”å›æˆåŠŸè¯»å–çš„æ•°æ®å­—èŠ‚æ•°
+            &m_osRead); //NULLä¸ºåŒæ­¥å‘é€ï¼ŒOVERLAPPED*ä¸ºå¼‚æ­¥å‘é€
+        if (!bReadStat)
+        {
+            if (GetLastError() == ERROR_IO_PENDING) //å¦‚æœä¸²å£æ­£åœ¨è¯»å–ä¸­
+            {
+                //GetOverlappedResultå‡½æ•°çš„æœ€åä¸€ä¸ªå‚æ•°è®¾ä¸ºTRUE
+                //å‡½æ•°ä¼šä¸€ç›´ç­‰å¾…ï¼Œç›´åˆ°è¯»æ“ä½œå®Œæˆæˆ–ç”±äºé”™è¯¯è€Œè¿”å›
+                GetOverlappedResult(hCom, &m_osRead, &wCount, TRUE);
+            }
+            else
+            {
+                ClearCommError(hCom, &dwErrorFlags, &comStat); //æ¸…é™¤é€šè®¯é”™è¯¯
+                CloseHandle(m_osRead.hEvent); //å…³é—­å¹¶é‡Šæ”¾hEventçš„å†…å­˜
+                return 0;
+            }
+        }
+        for (int i = 0; i < 1024; i++)
+        {
+            if (buf[i] != -52)
+                rec_str += buf[i];
+            else
+                break;
+        }
+        return rec_str;
+    }
+}
+
+//å¼€å…¨éƒ¨å˜é‡åšä¸²å£é€šä¿¡
 WZSerialPort w;
-//Ã¿´Î½ÓÊÜÒ»¸ö×Ö·û×÷Îª°ë¾¶£¬¹ÊÉèÖÃ»º³åÇø
+//æ¯æ¬¡æ¥å—ä¸€ä¸ªå­—ç¬¦ä½œä¸ºåŠå¾„ï¼Œæ•…è®¾ç½®ç¼“å†²åŒº
 string buffer;
 int radius_tmp = 5;
 int get_turning_radius() {
-    //Ô¤Áô½Ó¿Ú×öºÃ×¼±¸
-    if(buffer.empty())buffer = w.receive();//ÒòÎª´ËÊ±»º³åÇøÈ¡¹âÁË£¬Õâ¸öÊ±ºòÔÙÈ¥È¡
-    //Õâ¸öÊ±ºò½²µÀÀíÓ¦¸ÃÊÇÈ¡µ½ÁË£¬µ«ÒªÊÇÃ»È¡µ½£¬ÄÇ¾Í»á³ö´í
+    //é¢„ç•™æ¥å£åšå¥½å‡†å¤‡
+    if(buffer.empty())buffer = w.receive();//å› ä¸ºæ­¤æ—¶ç¼“å†²åŒºå–å…‰äº†ï¼Œè¿™ä¸ªæ—¶å€™å†å»å–
+    //è¿™ä¸ªæ—¶å€™è®²é“ç†åº”è¯¥æ˜¯å–åˆ°äº†ï¼Œä½†è¦æ˜¯æ²¡å–åˆ°ï¼Œé‚£å°±ä¼šå‡ºé”™
     if (buffer.size()) {
-        //radius_tmp = buffer[0] - '0';
         radius_tmp = atoi(buffer.substr(0,3).c_str());
         buffer = "";
     }
@@ -388,26 +394,65 @@ int get_turning_radius() {
     return radius;
 }
 
+
+/*
+    socketé€šä¿¡
+*/
+WORD wVersionRequested;
+WSADATA wsaData;
+int err;
+SOCKET sockClient;
+SOCKADDR_IN addrSrv;
+char* baseCh = { "1" };
+
+void init_socket() {
+    wVersionRequested = MAKEWORD(1, 1);
+    err = WSAStartup(wVersionRequested, &wsaData);
+    if (err != 0) {
+        exit(-1);
+    }
+    if (LOBYTE(wsaData.wVersion) != 1 ||
+        HIBYTE(wsaData.wVersion) != 1) {
+        WSACleanup();
+        exit(-1);
+    }
+    sockClient = socket(AF_INET, SOCK_STREAM, 0);
+    addrSrv.sin_addr.S_un.S_addr = inet_addr("127.0.0.1");
+    addrSrv.sin_family = AF_INET;
+    addrSrv.sin_port = htons(8888);
+    connect(sockClient, (SOCKADDR*)&addrSrv, sizeof(SOCKADDR));
+
+}
+
+int get_turning_radius_by_socket() {
+    send(sockClient, baseCh, strlen(baseCh) + 1, 0);
+    char recvBuf[50];
+    recv(sockClient, recvBuf, 50, 0);
+    radius_tmp = atoi(recvBuf);
+    int radius = radius_tmp << 1;//tmp:cm -> mm -> pix *10 /5 <=> (<<1)
+    return radius;
+}
+
+void close_socket() {
+    closesocket(sockClient);
+    WSACleanup();
+}
+
+/*
+    èšç±»ç®—æ³•éƒ¨åˆ†
+*/
 void ExpandCluster(unordered_map<int,int> &mp,int visited[],
     vector<int> &inCluster,int &index,vector<vector<p>> &cluster,
     vector<int> &tmp, vector<p>& points,float metric,float MinPts,int useful) {
 
     vector<p> newCluster;
-    newCluster.push_back(points[index]);//Èë¿ÚµÄµã£¨ºËĞÄµã£©·ÅÈëĞÂµÄ´ØÖĞ
-    //printf("core point:%d\n", index);
-    inCluster[index] = 1; //±ê¼ÇÔÚ´ØÖĞ
-    for (int i = 1; i < tmp.size();i++) { //ÁìÓò¿ÉÄÜ»á²»¶ÏµØÀ©´ó
-        //i = 0 ÊÇ¿Ï¶¨ÔÚÀïÃæµÄ
+    newCluster.push_back(points[index]);//å…¥å£çš„ç‚¹ï¼ˆæ ¸å¿ƒç‚¹ï¼‰æ”¾å…¥æ–°çš„ç°‡ä¸­
+    inCluster[index] = 1; //æ ‡è®°åœ¨ç°‡ä¸­
+    for (int i = 1; i < tmp.size();i++) { //é¢†åŸŸå¯èƒ½ä¼šä¸æ–­åœ°æ‰©å¤§
+        //i = 0 æ˜¯è‚¯å®šåœ¨é‡Œé¢çš„
         visited[tmp[i]] = 1;
         vector<int> neighbor;
         neighbor.push_back(tmp[i]);
-        /*for (int j = 0; j < tmp.size(); j++) { //ÁìÓò¿ÉÄÜ»á²»¶ÏµØÀ©´ó
-            if (tmp[i] == j)continue;
-            if ((points[tmp[i]].first - points[tmp[j]].first)*(points[tmp[i]].first - points[tmp[j]].first)+
-                (points[tmp[i]].second - points[tmp[j]].second)* (points[tmp[i]].second - points[tmp[j]].second)<=metric) {
-                neighbor.push_back(tmp[j]);
-            }
-        }*/
         for (int j = 0; j < useful; j++) {
             if (tmp[i] == j)continue;
             if ((points[tmp[i]].first - points[j].first) * (points[tmp[i]].first - points[j].first) +
@@ -418,54 +463,53 @@ void ExpandCluster(unordered_map<int,int> &mp,int visited[],
         if (neighbor.size() >= MinPts) {
             for (auto& n : neighbor) {
                 if (!mp.count(n)) {
-                    tmp.push_back(n);//À©Õ¹NµÄÊıÄ¿
-                    mp[n] = 1;//±ê¼Ç½øÈëÁìÓòÖĞ
+                    tmp.push_back(n);//æ‰©å±•Nçš„æ•°ç›®
+                    mp[n] = 1;//æ ‡è®°è¿›å…¥é¢†åŸŸä¸­
                 }
             }
         }
-        if (!inCluster[tmp[i]]) {//Èç¹û²»ÔÚÈÎºÎ´ØÖĞÔò¼ÓÈëĞÂ´Ø
+        if (!inCluster[tmp[i]]) {//å¦‚æœä¸åœ¨ä»»ä½•ç°‡ä¸­åˆ™åŠ å…¥æ–°ç°‡
             newCluster.push_back(points[tmp[i]]);
-            inCluster[tmp[i]] = 1; //±ê¼Ç½øÈë´ØÖĞ
+            inCluster[tmp[i]] = 1; //æ ‡è®°è¿›å…¥ç°‡ä¸­
         }
     }
     cluster.push_back(newCluster);
 }
-
 /*
     int rbx = 320, rby = 240 + 260;
-    ÒÔÉÏÊÇÔİÉèÖÃµÄºóÂÖ×ø±ê
-    °ë¾¶Ô¤ÉèÊÇ200
+    ä»¥ä¸Šæ˜¯æš‚è®¾ç½®çš„åè½®åæ ‡
+    åŠå¾„é¢„è®¾æ˜¯200
 */
 int in_play;
-inline bool indanger(float x, float y, float r,float turning_radius) {//°ë¾¶½Ó¿Ú
-    if (abs(turning_radius) < 1e-7)return false;//Ö±ĞĞÈ·ÈÏÃ»ÓĞÎ£ÏÕÇøÓò
-    int rbx = 320, rby = 240 + 300;//ÖĞĞÄ£º320 240 °²×°Î»ÖÃµ½³µÉí£º1300mm/5 = 260pix Ô­ÓĞ240+260
-    int cxrb = rbx + turning_radius, cyrb = rby;//ÓÒºóÂÖµÄ×ªÍäÔ²ĞÄ×ø±ê
+inline bool indanger(float x, float y, float r,float turning_radius) {//åŠå¾„æ¥å£
+    if (abs(turning_radius) < 1e-7)return false;//ç›´è¡Œç¡®è®¤æ²¡æœ‰å±é™©åŒºåŸŸ
+    int rbx = 320, rby = 240 + 300;//ä¸­å¿ƒï¼š320 240 å®‰è£…ä½ç½®åˆ°è½¦èº«ï¼š1300mm/5 = 260pix åŸæœ‰240+260
+    int cxrb = rbx + turning_radius, cyrb = rby;//å³åè½®çš„è½¬å¼¯åœ†å¿ƒåæ ‡
     
     float dist2 = sqrt((x - cxrb) * (x - cxrb) + (y - cyrb) * (y - cyrb));
     if (dist2 >= turning_radius - r && y <= cyrb) { 
         return true; 
-    }//±£Ö¤ÆäÔÚµÚ¶şÏóÏŞÖĞ °ë¾¶½Ó¿Ú
+    }//ä¿è¯å…¶åœ¨ç¬¬äºŒè±¡é™ä¸­ åŠå¾„æ¥å£
     return false;
 }
 
-int get_lspeed() {//ÂÖËÙ½Ó¿Ú
+int get_lspeed() {//è½®é€Ÿæ¥å£
     int speed = 50;
-    return speed;//·µ»Ø
+    return speed;//è¿”å›
 }
 
-int get_rspeed() {//ÂÖËÙ½Ó¿Ú
+int get_rspeed() {//è½®é€Ÿæ¥å£
     int speed = 50;
-    return speed;//·µ»Ø
+    return speed;//è¿”å›
 }
 
 void DBSCAN(int visited[],vector<p>& points,int useful,float Eps,float MinPts,int turning_radius) {
-    int num = 0;//´ØµÄ¸öÊı
-    int inner = 0; //´ØÄÚ²¿µãµÄ¸öÊı ÓÃÓÚ±ê¼ÇÊÇ²»ÊÇÔëÉù
-    vector<int> isNoise(useful);//ÓÃÓÚ±ê¼ÇÊÇ·ñÊÇÔëÉù
+    int num = 0;//ç°‡çš„ä¸ªæ•°
+    int inner = 0; //ç°‡å†…éƒ¨ç‚¹çš„ä¸ªæ•° ç”¨äºæ ‡è®°æ˜¯ä¸æ˜¯å™ªå£°
+    vector<int> isNoise(useful);//ç”¨äºæ ‡è®°æ˜¯å¦æ˜¯å™ªå£°
     vector<vector<p>> Cluster;
     vector<int> inCluster(useful);
-    unordered_map<int, int> mp; //ÓÃÒÔ±ê¼ÇÊÇ·ñÔÚÁìÓòÖĞ
+    unordered_map<int, int> mp; //ç”¨ä»¥æ ‡è®°æ˜¯å¦åœ¨é¢†åŸŸä¸­
 
     float metric = Eps * Eps;
     for (int i = 0; i < useful;i++) {
@@ -497,7 +541,7 @@ void DBSCAN(int visited[],vector<p>& points,int useful,float Eps,float MinPts,in
         ExpandCluster(mp,visited,inCluster,i,Cluster,tmp,points,metric,MinPts,useful);//inCluster index total_Cluster newCluster 
         //ATTENTION:metric as Eps^2
     }
-    //¼ÆËã¾ÛÀàÖĞĞÄÓë°ë¾¶
+    //è®¡ç®—èšç±»ä¸­å¿ƒä¸åŠå¾„
     setcolor(BLACK);
     int flag = 0;
     for (int i = 0;i < Cluster.size();i++) {
@@ -506,32 +550,26 @@ void DBSCAN(int visited[],vector<p>& points,int useful,float Eps,float MinPts,in
          
          for (int j = 0; j < Cluster[i].size();j++) {
              centerX += Cluster[i][j].first, centerY += Cluster[i][j].second;
-             //printf("first:%lf second:%lf\n", Cluster[i][j].first, Cluster[i][j].second);
              left = min(left, Cluster[i][j].first), right = max(right,Cluster[i][j].first);
              up = min(up, Cluster[i][j].second), down = max(down, Cluster[i][j].second);
          }
          centerX /= Cluster[i].size(), centerY /= Cluster[i].size();
-         //printf("centerX:%lf centerY:%lf\n", centerX,centerY);
          float radius = max(abs(centerX - left),max(abs(centerX - right),max(abs(centerY - up),abs(centerY - down))));
          radius = 10;
-         //ÕâÀï/5 Ê¹µÃÕæÊµ¾àÀëmmÄÜ¹»×ª»»µ½pix
-         centerX = centerX /5 + 320, centerY = centerY /5 + 240;//¼ÓÆ«ÒÆÁ¿
-         //printf("%d:horizon:%f vertical:%f radius:%f\n", i,centerX,centerY, radius);//ĞŞÕıÁË×ø±êÖ®ºóÓ¦¸ÃÃ»ÎÊÌâ
+         //è¿™é‡Œ/5 ä½¿å¾—çœŸå®è·ç¦»mmèƒ½å¤Ÿè½¬æ¢åˆ°pix
+         centerX = centerX /5 + 320, centerY = centerY /5 + 240;//åŠ åç§»é‡
          if (indanger(centerX, centerY, radius, turning_radius)) { 
              setfillcolor(RED); 
              flag = 1;
          }
          fillcircle((int)centerX, (int)centerY, (int)radius);
          setfillcolor(BLACK);
-         //printf("%d:horizon:%f vertical:%f radius:%f\n", i,320 + centerX, 240 + centerY, radius);
     }
     if (flag) {
         if (!in_play)PlaySound("../static/tts_sample.wav", NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
         in_play = 1;
-        //w.send("1");//1×÷ÎªÎ£ÏÕ±êÖ¾
     }
     else {
-        //w.send("0");//0×÷Îª°²È«±êÖ¾
         in_play = 0;
         PlaySound(NULL, NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
     }
@@ -539,53 +577,75 @@ void DBSCAN(int visited[],vector<p>& points,int useful,float Eps,float MinPts,in
 
 void stm32_init() {
     DCB dcb;
-    HANDLE m_hCom;//COM¿Ú¾ä±ú 
+    HANDLE m_hCom;//COMå£å¥æŸ„ 
     m_hCom = CreateFile(
-        "COM9",//Ô¤ÉèCOM9
+        "COM9",//é¢„è®¾COM9
         GENERIC_READ | GENERIC_WRITE,
         0,
         NULL,
         OPEN_EXISTING,
         0,
         NULL);
-    if (m_hCom != INVALID_HANDLE_VALUE) // ´ò¿ª´®ĞĞ¿Ú³É¹¦ 
+    if (m_hCom != INVALID_HANDLE_VALUE) // æ‰“å¼€ä¸²è¡Œå£æˆåŠŸ 
     {
-        // ÅäÖÃÍ¨Ñ¶²ÎÊı 
+        // é…ç½®é€šè®¯å‚æ•° 
         GetCommState(m_hCom, &dcb);
 
 
-        dcb.BaudRate = CBR_9600;//²¨ÌØÂÊ 
+        dcb.BaudRate = CBR_9600;//æ³¢ç‰¹ç‡ 
         dcb.Parity = NOPARITY;
-        //EVENPARITY Å¼Ğ£Ñé ,NOPARITY ÎŞĞ£Ñé 
-        //MARKPARITY ±ê¼ÇĞ£Ñé   ODDPARITY ÆæĞ£Ñé 
-        dcb.ByteSize = 8;//Êı¾İÎ» 
-        dcb.StopBits = ONESTOPBIT;// ONESTOPBIT 1Î»Í£Ö¹Î»   
-                                  //TWOSTOPBITS 2Î»Í£Ö¹Î» 
-                                  //ONE5STOPBITS   1.5Î»Í£Ö¹Î» 
+        //EVENPARITY å¶æ ¡éªŒ ,NOPARITY æ— æ ¡éªŒ 
+        //MARKPARITY æ ‡è®°æ ¡éªŒ   ODDPARITY å¥‡æ ¡éªŒ 
+        dcb.ByteSize = 8;//æ•°æ®ä½ 
+        dcb.StopBits = ONESTOPBIT;// ONESTOPBIT 1ä½åœæ­¢ä½   
+                                  //TWOSTOPBITS 2ä½åœæ­¢ä½ 
+                                  //ONE5STOPBITS   1.5ä½åœæ­¢ä½ 
 
         COMMTIMEOUTS m_CommTimeouts;
         SetCommState(m_hCom, &dcb);
-        // Config timeoutsÉèÖÃ³¬Ê± 
+        // Config timeoutsè®¾ç½®è¶…æ—¶ 
         m_CommTimeouts.ReadIntervalTimeout = 0;
         m_CommTimeouts.ReadTotalTimeoutConstant = 1000;
         m_CommTimeouts.ReadTotalTimeoutMultiplier = 0;
         m_CommTimeouts.WriteTotalTimeoutConstant = 200;
         m_CommTimeouts.WriteTotalTimeoutMultiplier = 0;
         SetCommTimeouts(m_hCom, &m_CommTimeouts);
-        // Clear bufferÇå³ı»º³åÇø 
+        // Clear bufferæ¸…é™¤ç¼“å†²åŒº 
         PurgeComm(m_hCom, PURGE_TXABORT);
         PurgeComm(m_hCom, PURGE_RXABORT);
         PurgeComm(m_hCom, PURGE_TXCLEAR);
         PurgeComm(m_hCom, PURGE_RXCLEAR);
 
-        // ´ò¿ª´®ĞĞ¿Ú³É¹¦ 
+        // æ‰“å¼€ä¸²è¡Œå£æˆåŠŸ 
         //return TRUE;
     }
     
 }
 
+int connect_to_com4() {
+    bool flag = w.open("com4");
+    if (!flag) {
+        printf("cannot open com4");
+        exit(1);
+    }
+}
+
+/*
+    About Drawing
+*/
+void set_font() {
+    settextcolor(BLACK);//è®¾ç½®æ–‡å­—é¢œè‰²
+    LOGFONT f;
+    gettextstyle(&f);						// è·å–å½“å‰å­—ä½“è®¾ç½®
+    f.lfHeight = 30;						// è®¾ç½®å­—ä½“é«˜åº¦ä¸º 48
+    _tcscpy_s(f.lfFaceName, _T("é»‘ä½“"));		// è®¾ç½®å­—ä½“ä¸ºâ€œé»‘ä½“â€(é«˜ç‰ˆæœ¬ VC æ¨èä½¿ç”¨ _tcscpy_s å‡½æ•°)
+    f.lfQuality = ANTIALIASED_QUALITY;		// è®¾ç½®è¾“å‡ºæ•ˆæœä¸ºæŠ—é”¯é½¿  
+    settextstyle(&f);						// è®¾ç½®å­—ä½“æ ·å¼
+}
+
+
 int main(int argc, const char * argv[]) {
-    const char * opt_com_path = NULL;
+    const char* opt_com_path = NULL;
     _u32         baudrateArray[2] = {115200, 256000};
     _u32         opt_com_baudrate = 0;
     u_result     op_result;
@@ -608,13 +668,18 @@ int main(int argc, const char * argv[]) {
     if (!opt_com_path) {
 #ifdef _WIN32
         // use default com port
-        opt_com_path = "\\\\.\\com3";
+        // opt_com_path = "\\\\.\\com3";  // æ¨é—»ç¬›
+        opt_com_path = "\\\\.\\com4"; // åˆ˜æ¬£æ€¡
+        // opt_com_path = "\\\\.\\com5"; // è¾›äºšè¡Œ
 #elif __APPLE__
         opt_com_path = "/dev/tty.SLAB_USBtoUART";
 #else
         opt_com_path = "/dev/ttyUSB0";
 #endif
     }
+
+    
+    
 
     // create the driver instance
 	RPlidarDriver * drv = RPlidarDriver::CreateDriver(DRIVER_TYPE_SERIALPORT);
@@ -695,9 +760,6 @@ int main(int argc, const char * argv[]) {
     if (!checkRPLIDARHealth(drv)) {
         goto on_finished;
     }
-
-    //signal(SIGINT, ctrlc);
-    //try not to use signal
     
     {
         drv->startMotor();
@@ -708,21 +770,14 @@ int main(int argc, const char * argv[]) {
         // try to use GUI to demostrate data
 
         vector<p> tmp(8192, { 0,0 });
+        init_socket();
 
         /*
             Area:Canvas setup
         */
-        //¾àÀëµ÷Õû
-        //initgraph(640, 480); //put on a canvas
-        bool flag = w.open("com4");
-        /*if (!flag) {
-            printf("cannot open com4");
-            return 0;
-        }*/
-        initgraph(1280, 960);//ĞŞ¸Ä»­²¼´óĞ¡Ö®ºóÊÇ·ñÓ¦¸ÃÖØĞÂĞŞÕıcenterXºÍcenterY£¿
+        initgraph(1280, 960);//ä¿®æ”¹ç”»å¸ƒå¤§å°ä¹‹åæ˜¯å¦åº”è¯¥é‡æ–°ä¿®æ­£centerXå’ŒcenterYï¼Ÿ
         int radius = 200; //radius of circle
         int centerX = 320, centerY = 240; //center of circle
-        //circle(centerX,centerY,radius);
         float maxDistance = 0.f; //Get maxDistance to resize canvas
         float minDistance = INT_MAX;
         float zoomFactor = 1.f;//set zoomFactor to fit into canvas
@@ -730,45 +785,43 @@ int main(int argc, const char * argv[]) {
         int fillRadius = 1;//set fill radius of dot cloud
         const int maxSize = 8192; //synchronized with 8192 (size of nodes array)
         const int tWidth = 100; 
+
         IMAGE img;
         setbkcolor(LIGHTGRAY);
         cleardevice();
-        loadimage(&img,"../img/car_3.jpg",160,500);//Êµ³µĞŞ¸Ä Êµ³µ³ß´ç ³¤1.80m ¿í£¨ºóÂÖÖá¾à£©0.75m
-        //Êµ³µ³ß´ç ³¤:2.50m ¿í0.80m
+        loadimage(&img,"../img/car_3.jpg",160,500);//å®è½¦ä¿®æ”¹ å®è½¦å°ºå¯¸ é•¿1.80m å®½ï¼ˆåè½®è½´è·ï¼‰0.75m
+        //å®è½¦å°ºå¯¸ é•¿:2.50m å®½0.80m
         //2500/5 = 500 800/5 = 160
-        in_play = 0;//ÉùÒô±êÖ¾³õÊ¼»¯
-        putimage(160, 80, &img);//ÏÔÊ¾Î»ÖÃ±ê¶¨ 320 - 160 
-        //×İ×ø±êĞèÒªÉÏÒÆ800/5 = 160 240-160 = 80
-        setcolor(RED);//ÀÏ°åËµ¸Ä³ÉºìÉ«
-        settextcolor(BLACK);//ÉèÖÃÎÄ×ÖÑÕÉ«
-        LOGFONT f;
-        gettextstyle(&f);						// »ñÈ¡µ±Ç°×ÖÌåÉèÖÃ
-        f.lfHeight = 30;						// ÉèÖÃ×ÖÌå¸ß¶ÈÎª 48
-        _tcscpy_s(f.lfFaceName, _T("ºÚÌå"));		// ÉèÖÃ×ÖÌåÎª¡°ºÚÌå¡±(¸ß°æ±¾ VC ÍÆ¼öÊ¹ÓÃ _tcscpy_s º¯Êı)
-        f.lfQuality = ANTIALIASED_QUALITY;		// ÉèÖÃÊä³öĞ§¹ûÎª¿¹¾â³İ  
-        settextstyle(&f);						// ÉèÖÃ×ÖÌåÑùÊ½
+        in_play = 0;//å£°éŸ³æ ‡å¿—åˆå§‹åŒ–
+        putimage(160, 80, &img);//æ˜¾ç¤ºä½ç½®æ ‡å®š 320 - 160 
+        //çºµåæ ‡éœ€è¦ä¸Šç§»800/5 = 160 240-160 = 80
+        setcolor(RED);//è€æ¿è¯´æ”¹æˆçº¢è‰²
         
-        /*outtextxy(0, 35, _T("×óÂÖËÙ:"));
-        outtextxy(0, 70, _T("ÓÒÂÖËÙ:"));*/
-        int rbx = 320, rby = 240 + 300;//°²×°Î»ÖÃ+°²×°Î»ÖÃµ½ºóÂÖ³¤¶È Ô­240+260 ÏÖÔÚ¶àÆ«ÒÆÒ»µã
-        int turning_radius = get_turning_radius();
-        int turning_left_speed = get_lspeed();
-        int turning_right_speed = get_rspeed();
+        set_font();
+        
+        int rbx = 320, rby = 240 + 300;//å®‰è£…ä½ç½®+å®‰è£…ä½ç½®åˆ°åè½®é•¿åº¦ åŸ240+260 ç°åœ¨å¤šåç§»ä¸€ç‚¹
+        int turning_radius = 0, turning_left_speed = 0, turning_right_speed = 0;
+
+        /*
+            è½®é€Ÿè·å–
+        */
+        //turning_radius = get_turning_radius(); // å½“ä½¿ç”¨ä¸²å£çš„æ—¶å€™ä½¿ç”¨è¿™ä¸ª
+
+        /*
+            è¾“å‡ºæ–‡å­—
+        */
         char r[10], ls[10], rs[10];
         if (turning_radius) {
-            outtextxy(0, 0, _T("°ë¾¶Îª:"));
-            sprintf_s(r, "%d", turning_radius * 5);//×ª»»³Émm
+            outtextxy(0, 0, _T("åŠå¾„ä¸º:"));
+            sprintf_s(r, "%d", turning_radius * 5);//è½¬æ¢æˆmm
             outtextxy(100, 0, r);
         }
         else {
-            outtextxy(0, 0, _T("·ÇÓÒ×ª"));
+            outtextxy(0, 0, _T("éå³è½¬"));
         }
-        /*sprintf_s(ls, "%d", turning_left_speed);
-        sprintf_s(rs, "%d", turning_right_speed);*/
-        /*outtextxy(100,35, ls);
-        outtextxy(100, 70, rs);*/
-        if(turning_radius) arc(rbx, rby-turning_radius, rbx+(turning_radius<<1), rby+turning_radius, PI / 2, -PI);//°ë¾¶½Ó¿Ú
-        //Èô×ªÍä°ë¾¶ÊÇ0Ôò²»»­
+        
+        if(turning_radius) arc(rbx, rby-turning_radius, rbx+(turning_radius<<1), rby+turning_radius, PI / 2, -PI);//åŠå¾„æ¥å£
+        //è‹¥è½¬å¼¯åŠå¾„æ˜¯0åˆ™ä¸ç”»
         /*
              eliminate 0 points
         */
@@ -776,31 +829,19 @@ int main(int argc, const char * argv[]) {
         while (1) {
             rplidar_response_measurement_node_t nodes[8192];//DEPRECATED API WARINING:grabScanData
 
-            //rplidar_response_measurement_node_hq_t nodes[8192];
             size_t   count = _countof(nodes);
 
             op_result = drv->grabScanData(nodes, count); //DEPRECATED API WARINING
-            //op_result = drv->grabScanDataHq(nodes, count);
 
             if (IS_OK(op_result)) {
                 drv->ascendScanData(nodes, count);//DEPRECATED API WARINING(Triggered by grabScanData)
-
                 /*
                         Area:cout detail to screen
                 */
                 for (int pos = 0; pos < (int)count; ++pos) {
-
-                    //IF TEST DATA ONLY
-                    /*printf("%s theta: %03.2f Dist: %08.2f Q: %d \n",
-                    (nodes[pos].sync_quality & RPLIDAR_RESP_MEASUREMENT_SYNCBIT) ?"S ":"  ",
-                    (nodes[pos].angle_q6_checkbit >> RPLIDAR_RESP_MEASUREMENT_ANGLE_SHIFT)/64.0f,
-                    nodes[pos].distance_q2/4.0f,
-                    nodes[pos].sync_quality >> RPLIDAR_RESP_MEASUREMENT_QUALITY_SHIFT);*/
-
                     /*
                         Area:Drawing
                     */
-
                     if ((nodes[pos].sync_quality >> RPLIDAR_RESP_MEASUREMENT_QUALITY_SHIFT) == 0)continue;
                     float tmpAngle = (nodes[pos].angle_q6_checkbit >> RPLIDAR_RESP_MEASUREMENT_ANGLE_SHIFT) / 64.0f;
                     if (tmpAngle >= 90 && tmpAngle <= 270)continue; //ONLY RIGHT SIDE WILL BE CHOOSEN
@@ -808,85 +849,48 @@ int main(int argc, const char * argv[]) {
                     float tmpX = cos(tmpAngle * PI / 180) * tmpDistance;
                     float tmpY = sin(tmpAngle * PI / 180) * tmpDistance;
                     if (tmpY + 4800 < 0 || tmpY + 4800 > 9600 || tmpX + 6400 < 0 || tmpX + 6400 > 12800)continue; 
-                    //Èô×ª»»Îª»­²¼ÉÏµÄ×ø±êÖ®ºó³ö½çÔò²»¹Ü
+                    //è‹¥è½¬æ¢ä¸ºç”»å¸ƒä¸Šçš„åæ ‡ä¹‹åå‡ºç•Œåˆ™ä¸ç®¡
                     tmp[useful].first = tmpX;//first:x polar coordinate
                     tmp[useful].second = tmpY; //second:y polar coordinate
                     
-                    /*
-                        Area:min-max Distance metric
-                    */
-                    //maxDistance = max(maxDistance, tmpDistance);
-
-                    //minDistance = tmpDistance < 1e-7 ? minDistance : min(minDistance, tmpDistance);// ~~~
-
-                    //printf("dis:%03.2f theta: %03.2f X: %08.2f Y: %08.2f\n", tmpDistance,tmpAngle, tmp[useful].first, tmp[useful].second);
                     useful++;
                 }
-                //old
-                /*
-                    Area:maxDistance correction
-                */
-                //maxDistance = 1500; //~~~
-
-                /*
-                    Area:zoomFactor calcu
-                */
-
-                //zoomFactor = radius / maxDistance; //~~~
-                /*
-                    Area:Data visualation
-                */
-                /*for (int pos = 0;pos < (int)useful;++pos) {
-                    solidcircle(tmp[pos].first,tmp[pos].second,fillRadius);//simple demo:radius=5
-                }*/
-                /*
-                    Area:Text outtext
-                */
-                //circle(centerX, centerY, radius);
-                //setcolor(GREEN);
-                //line(320, 280, 350, 200);
-                //printf(">>>useful:%d\n", useful);
-
                 /*
                     Area:Cluster calculation
                 */
                 int visited[8192];
                 memset(visited, 0, sizeof(visited));
 
-                DBSCAN(visited, tmp, useful, 150, 10,turning_radius); //½«×ªÍä°ë¾¶Ò²´«Èë Ô­£º150 15
-                Sleep(200);//ÑÓ³¤Ê±¼ä£¿
+                DBSCAN(visited, tmp, useful, 150, 10,turning_radius); //å°†è½¬å¼¯åŠå¾„ä¹Ÿä¼ å…¥ åŸï¼š150 15
+                Sleep(200);//å»¶é•¿æ—¶é—´ï¼Ÿ
 
-                turning_radius = get_turning_radius();//Í¨¹ı½Ó¿ÚË¢ĞÂ°ë¾¶
+                // è·å–ä¸²å£å‘æ¥çš„æ•°æ®
+                turning_radius = get_turning_radius_by_socket();//é€šè¿‡æ¥å£åˆ·æ–°åŠå¾„
                 turning_left_speed = get_lspeed();
                 turning_right_speed = get_rspeed();
                 
                 cleardevice();
                 putimage(160, 80, &img);
+
                 setcolor(BLACK);
+                /*
+                    è¾“å‡ºæ–‡å­—
+                */
                 if (turning_radius) {
-                    outtextxy(0, 0, _T("°ë¾¶Îª:"));
-                    sprintf_s(r, "%d", turning_radius * 5);//×ª»»³Émm
+                    outtextxy(0, 0, _T("åŠå¾„ä¸º:"));
+                    sprintf_s(r, "%d", turning_radius * 5);//è½¬æ¢æˆmm
                     outtextxy(100, 0, r);
                 }
                 else {
-                    outtextxy(0, 0, _T("·ÇÓÒ×ª"));
+                    outtextxy(0, 0, _T("éå³è½¬"));
                 }
-                /*outtextxy(0, 35, _T("×óÂÖËÙ:"));
-                outtextxy(0, 70, _T("ÓÒÂÖËÙ:"));*/
-                /*sprintf_s(ls, "%d", turning_left_speed);
-                sprintf_s(rs, "%d", turning_right_speed);*/
-                /*outtextxy(100, 35, ls);
-                outtextxy(100, 70, rs);*/
+                
                 setcolor(RED);
-                if (turning_radius != 0) arc(rbx, rby - turning_radius, rbx + (turning_radius << 1), rby + turning_radius, PI / 2, -PI);//°ë¾¶½Ó¿Ú
+                if (turning_radius != 0) arc(rbx, rby - turning_radius, rbx + (turning_radius << 1), rby + turning_radius, PI / 2, -PI);//åŠå¾„æ¥å£
 
                 useful = 0;//trace 
             }
 
-            /*if (ctrl_c_pressed){
-                break;
-            }*/
-            //try not to use interrupt
             if (_kbhit()) {
                 char sig = _getch();
                 if (sig == 'q' || sig == 'Q') {
@@ -895,7 +899,7 @@ int main(int argc, const char * argv[]) {
             }
         }
     }
-
+    close_socket();
     drv->stop();
     drv->stopMotor();
     // done!
@@ -904,4 +908,3 @@ on_finished:
     drv = NULL;
     return 0;
 }
-
